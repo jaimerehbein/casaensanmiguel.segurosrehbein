@@ -55,7 +55,7 @@ export const HeroSection = () => {
                 </div>
 
                 <h1 className="hero-element font-serif text-[3rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold mb-8 tracking-tight text-white drop-shadow-2xl">
-                    Oportunidad en <br className="hidden md:block" /><span className="gradient-gold font-light italic">San Miguel Clásico</span>
+                    Oportunidad de <br className="hidden md:block" /><span className="gradient-gold font-light italic">Casa en San Miguel</span>
                 </h1>
 
                 <p className="hero-element text-lg sm:text-xl md:text-2xl text-brand-secondary mb-12 max-w-2xl md:mx-auto leading-relaxed text-balance font-light tracking-wide">
