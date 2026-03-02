@@ -44,42 +44,42 @@ export const HeroSection = () => {
                     quality={100}
                     className="object-cover object-center md:object-[center_30%] bg-image"
                 />
-                {/* Premium Overlay Gradient - Smoother fade to black at bottom for mobile readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/60 to-transparent md:bg-gradient-to-t md:from-brand-primary/90 md:via-brand-primary/50 md:to-transparent"></div>
+                {/* Premium Overlay Gradient - Cinematic Dark Mode */}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/80 to-black/20 md:bg-gradient-to-t md:from-brand-primary md:via-brand-primary/60 md:to-black/30"></div>
             </div>
 
             <div ref={textRef} className="relative z-10 w-full px-5 sm:px-8 text-left md:text-center md:container md:mx-auto max-w-5xl text-white">
-                <div className="hero-element inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark text-white/90 border border-white/20 mb-6 text-sm tracking-wider font-medium animate-float">
-                    <MapPin size={16} className="text-brand-accent" />
+                <div className="hero-element inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark text-brand-gold/90 border border-brand-gold/20 mb-8 text-xs sm:text-sm tracking-[0.2em] font-medium uppercase animate-float">
+                    <MapPin size={16} className="text-brand-gold" />
                     <span>Llico 650, San Miguel</span>
                 </div>
 
-                <h1 className="hero-element text-[2.5rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-white drop-shadow-md">
-                    Oportunidad Única en <br className="hidden md:block" />Sector Tradicional
+                <h1 className="hero-element font-serif text-[3rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold mb-8 tracking-tight text-white drop-shadow-2xl">
+                    Colección <br className="hidden md:block" /><span className="gradient-gold font-light italic">San Miguel</span>
                 </h1>
 
-                <p className="hero-element text-lg sm:text-xl md:text-2xl text-gray-200/90 mb-10 max-w-2xl md:mx-auto leading-relaxed text-balance font-light">
-                    Casa de 200m² con gran terreno, 3 dormitorios y estacionamiento para 3 vehículos. Ideal para familias o proyectos.
+                <p className="hero-element text-lg sm:text-xl md:text-2xl text-brand-secondary mb-12 max-w-2xl md:mx-auto leading-relaxed text-balance font-light tracking-wide">
+                    Una obra patrimonial de 200m² que redefine la calidad de vida. Espacios de excelencia para familias con visión.
                 </p>
 
-                <div className="hero-element flex flex-col sm:flex-row gap-4 justify-start md:justify-center items-stretch sm:items-center">
+                <div className="hero-element flex flex-col sm:flex-row gap-5 justify-start md:justify-center items-stretch sm:items-center">
                     <Button
                         size="lg"
                         variant="whatsapp"
                         onClick={handleCTA}
-                        className="w-full sm:w-auto font-bold gap-3 group shadow-2xl shadow-brand-accent/20"
+                        className="w-full sm:w-auto font-medium tracking-wide gap-3 group shadow-2xl shadow-brand-accent/20 rounded-none rounded-tr-2xl rounded-bl-2xl"
                     >
-                        Agendar Visita por WhatsApp
+                        Atención Inmediata
                         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                     </Button>
 
                     <Button
                         size="lg"
                         variant="outline"
-                        className="w-full sm:w-auto text-white hover:text-brand-primary"
+                        className="w-full sm:w-auto text-white/80 hover:text-brand-gold hover:border-brand-gold/50 rounded-none rounded-tl-2xl rounded-br-2xl"
                         onClick={() => document.getElementById('details')?.scrollIntoView({ behavior: 'smooth' })}
                     >
-                        Ver Detalles de la Propiedad
+                        Descubrir Propiedad
                     </Button>
                 </div>
             </div>

@@ -10,21 +10,24 @@ interface PoiCardProps {
 
 export const PoiCard = ({ icon, category, items, className }: PoiCardProps) => {
     return (
-        <div className={cn("p-6 glass rounded-2xl transition-transform hover:-translate-y-1", className)}>
-            <div className="flex items-center gap-3 mb-5">
-                <div className="text-brand-primary bg-brand-primary/5 p-3 rounded-xl">
+        <div className={cn("p-6 glass-dark rounded-2xl transition-transform hover:-translate-y-1", className)}>
+            <div className="flex items-center gap-6 mb-6">
+                <div className="p-2.5 bg-brand-gold/10 rounded-xl text-brand-gold">
                     {icon}
                 </div>
-                <h4 className="font-semibold text-lg text-brand-primary">{category}</h4>
+                <h3 className="font-medium text-lg text-white tracking-wide">{category}</h3>
             </div>
-            <ul className="space-y-3">
-                {items.map((item, index) => (
-                    <li key={index} className="flex justify-between items-center text-sm">
-                        <span className="text-brand-secondary font-medium">{item.name}</span>
-                        <span className="text-gray-400 bg-gray-50 px-2 py-1 rounded-md">{item.distance}</span>
-                    </li>
+            <div className="space-y-4">
+                {items.map((item, idx) => (
+                    <div key={idx} className="flex justify-between items-center group">
+                        <span className="text-brand-secondary group-hover:text-white transition-colors font-light tracking-wide">{item.name}</span>
+                        <span className="text-sm font-medium text-brand-gold/80 bg-brand-gold/5 px-2.5 py-1 rounded-lg">
+                            {/* Assuming 'time' property is intended, but using 'distance' as per provided interface */}
+                            {item.distance}
+                        </span>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };

@@ -1,18 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #111827;
-  /* Gray 900 */
-  --color-brand-accent: #25D366;
-  /* WhatsApp Green */
-  --color-brand-secondary: #4B5563;
-  /* Gray 600 */
-  --color-brand-light: #F9FAFB;
-  /* Gray 50 */
-  --color-brand-gold: #D4AF37;
-  /* Premium Gold Accent */
+  --color-brand-primary: hsl(0, 0%, 4%);
+  --color-brand-secondary: hsl(0, 0%, 75%);
+  --color-brand-accent: hsl(142.1, 76.2%, 36.3%);
+  --color-brand-light: hsl(0, 0%, 8%);
+  --color-brand-gold: hsl(45, 93%, 65%);
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
 }
 
 @layer base {
@@ -39,15 +35,19 @@
   }
 
   .glass {
-    @apply bg-white/70 backdrop-blur-lg border border-white/40 shadow-xl shadow-brand-primary/5;
+    @apply bg-white/[0.02] backdrop-blur-2xl border border-white/10 shadow-2xl;
   }
 
   .glass-dark {
-    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-2xl;
+    @apply bg-black/60 backdrop-blur-3xl border border-white/5 shadow-2xl;
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-gray-500;
+  }
+
+  .gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold via-yellow-200 to-brand-gold;
   }
 }
 

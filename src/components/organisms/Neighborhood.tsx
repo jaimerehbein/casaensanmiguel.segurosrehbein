@@ -53,17 +53,17 @@ export const Neighborhood = () => {
     ];
 
     return (
-        <section className="py-20 md:py-32 bg-white relative">
+        <section className="py-20 md:py-32 bg-brand-light relative">
             {/* Soft decorative background shape */}
-            <div className="absolute top-0 left-0 -ml-32 mt-32 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 -ml-32 mt-32 w-96 h-96 bg-brand-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="container mx-auto px-5 sm:px-8 max-w-7xl relative z-10">
                 <div className="text-left md:text-center mb-16 md:mb-20 max-w-3xl md:mx-auto">
-                    <span className="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-4 block animate-reveal">Ubicación</span>
-                    <h2 className="text-[2.2rem] leading-tight md:text-5xl font-bold text-brand-primary mb-6 animate-reveal" style={{ animationDelay: '0.1s' }}>
-                        Todo a tu alcance en <span className="gradient-text">San Miguel</span>
+                    <span className="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-6 block animate-reveal">Ubicación Privilegiada</span>
+                    <h2 className="font-serif text-[2.2rem] leading-tight md:text-5xl font-normal text-white mb-6 tracking-tight animate-reveal" style={{ animationDelay: '0.1s' }}>
+                        Cerca de <span className="font-serif italic text-brand-gold">lo Importante</span>
                     </h2>
-                    <p className="text-lg md:text-xl text-brand-secondary/90 animate-reveal" style={{ animationDelay: '0.2s' }}>
+                    <p className="text-lg md:text-xl text-brand-secondary/90 tracking-wide font-light animate-reveal" style={{ animationDelay: '0.2s' }}>
                         Excelente conectividad, comercio y educación a minutos de tu nueva casa.
                     </p>
                 </div>

@@ -49,15 +49,17 @@ export const Gallery = () => {
             <div className="container mx-auto px-5 sm:px-8 max-w-7xl">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-20 gap-6">
                     <div className="max-w-2xl">
-                        <span className="text-brand-gold font-semibold tracking-wider uppercase text-sm mb-4 block">Imágenes exclusivas</span>
-                        <h2 className="text-[2.2rem] leading-tight md:text-5xl font-bold mb-4 tracking-tight">Galería de la Propiedad</h2>
-                        <p className="text-lg md:text-xl text-gray-300">
-                            Recorre cada rincón de esta oportunidad inmobiliaria.
+                        <span className="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Colección Visual</span>
+                        <h2 className="font-serif text-[2.5rem] leading-tight md:text-5xl font-normal mb-4 tracking-tight">
+                            Recorrido de <span className="font-serif italic text-brand-gold">Exclusividad</span>
+                        </h2>
+                        <p className="text-lg md:text-xl text-brand-secondary font-light tracking-wide">
+                            Descubra cada rincón y detalle de esta oportunidad arquitectónica.
                         </p>
                     </div>
                     <button
                         onClick={() => openLightbox(0)}
-                        className="hidden md:flex items-center gap-2 text-white/80 hover:text-brand-gold transition-colors pb-2 font-medium"
+                        className="hidden md:flex items-center gap-2 text-white/50 hover:text-brand-gold transition-colors pb-2 font-medium tracking-wide uppercase text-sm"
                     >
                         <ImageIcon size={20} />
                         Ver todas las {allImages.length} fotos

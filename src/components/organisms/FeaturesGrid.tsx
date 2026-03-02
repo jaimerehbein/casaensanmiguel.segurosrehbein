@@ -39,18 +39,18 @@ export const FeaturesGrid = () => {
     ];
 
     return (
-        <section id="details" className="py-20 md:py-32 bg-gray-50/50 relative overflow-hidden">
-            {/* Decorative background blur */}
-            <div className="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl"></div>
+        <section id="details" className="py-20 md:py-32 bg-brand-primary relative overflow-hidden">
+            {/* Decorative cinematic lighting */}
+            <div className="absolute top-0 right-0 -mr-32 -mt-32 w-[600px] h-[600px] bg-brand-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="container mx-auto px-5 sm:px-8 max-w-7xl relative z-10">
                 <div className="text-left md:text-center mb-16 md:mb-24 max-w-3xl md:mx-auto">
-                    <span className="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Características</span>
-                    <h2 className="text-[2.2rem] leading-tight md:text-5xl font-bold text-brand-primary mb-6 tracking-tight">
-                        Diseño pensado para <br className="hidden md:block" /><span className="gradient-text">toda la familia</span>
+                    <span className="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Residencia de Autor</span>
+                    <h2 className="font-serif text-[2.5rem] leading-tight md:text-6xl font-normal text-white mb-6 tracking-tight">
+                        Diseño pensado para <br className="hidden md:block" /><span className="font-serif italic text-brand-gold">la excelencia</span>
                     </h2>
-                    <p className="text-lg md:text-xl text-brand-secondary/90 text-balance leading-relaxed">
-                        Una distribución inmejorable, con un metraje difícil de encontrar actualmente en la zona.
+                    <p className="text-lg md:text-xl text-brand-secondary text-balance leading-relaxed font-light tracking-wide">
+                        Una distribución inmejorable, con un metraje difícil de encontrar actualmente en la elite inmobiliaria de la zona.
                     </p>
                 </div>
 
