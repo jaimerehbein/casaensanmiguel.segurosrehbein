@@ -55,11 +55,11 @@ export const HeroSection = () => {
                 </div>
 
                 <h1 className="hero-element font-serif text-[3rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold mb-8 tracking-tight text-white drop-shadow-2xl">
-                    Colección <br className="hidden md:block" /><span className="gradient-gold font-light italic">San Miguel</span>
+                    Oportunidad en <br className="hidden md:block" /><span className="gradient-gold font-light italic">San Miguel Clásico</span>
                 </h1>
 
                 <p className="hero-element text-lg sm:text-xl md:text-2xl text-brand-secondary mb-12 max-w-2xl md:mx-auto leading-relaxed text-balance font-light tracking-wide">
-                    Una obra patrimonial de 200m² que redefine la calidad de vida. Espacios de excelencia para familias con visión.
+                    Amplia propiedad con gran terreno y capacidad para 3 vehículos. Diseño tradicional con living y comedor separados, cocina con comedor de diario y un anexo independiente en un sector tranquilo y consolidado.
                 </p>
 
                 <div className="hero-element flex flex-col sm:flex-row gap-5 justify-start md:justify-center items-stretch sm:items-center">
