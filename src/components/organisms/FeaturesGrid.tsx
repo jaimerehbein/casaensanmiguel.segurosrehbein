@@ -1,0 +1,70 @@
+"use client";
+
+import React from 'react';
+import { Maximize, BedDouble, Bath, Car, History } from 'lucide-react';
+import { FeatureCard } from '../molecules/FeatureCard';
+
+export const FeaturesGrid = () => {
+    const features = [
+        {
+            icon: <Maximize size={32} />,
+            title: "200m² Totales",
+            description: "98m² útiles y un gran espacio de terreno que brinda amplitud y posibilidades de remodelación."
+        },
+        {
+            icon: <BedDouble size={32} />,
+            title: "3 Dormitorios",
+            description: "Espaciosos y bien iluminados, incluyendo un dormitorio independiente en el patio trasero."
+        },
+        {
+            icon: <Bath size={32} />,
+            title: "2 Baños",
+            description: "Un baño principal interior más un segundo baño asociado al dormitorio exterior."
+        },
+        {
+            icon: <Car size={32} />,
+            title: "3 Estacionamientos",
+            description: "Privilegio escaso en la zona: capacidad real y cómoda para estacionar hasta tres vehículos."
+        },
+        {
+            icon: <History size={32} />,
+            title: "Estilo Clásico",
+            description: "Propiedad de 56 años de antigüedad con construcción sólida en un barrio ya consolidado."
+        },
+        {
+            icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>,
+            title: "Espacios Separados",
+            description: "Distribución tradicional con living y comedor independientes y amplia cocina con comedor de diario."
+        }
+    ];
+
+    return (
+        <section id="details" className="py-20 md:py-32 bg-gray-50/50 relative overflow-hidden">
+            {/* Decorative background blur */}
+            <div className="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl"></div>
+
+            <div className="container mx-auto px-5 sm:px-8 max-w-7xl relative z-10">
+                <div className="text-left md:text-center mb-16 md:mb-24 max-w-3xl md:mx-auto">
+                    <span className="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Características</span>
+                    <h2 className="text-[2.2rem] leading-tight md:text-5xl font-bold text-brand-primary mb-6 tracking-tight">
+                        Diseño pensado para <br className="hidden md:block" /><span className="gradient-text">toda la familia</span>
+                    </h2>
+                    <p className="text-lg md:text-xl text-brand-secondary/90 text-balance leading-relaxed">
+                        Una distribución inmejorable, con un metraje difícil de encontrar actualmente en la zona.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    {features.map((feature, idx) => (
+                        <FeatureCard
+                            key={idx}
+                            icon={feature.icon}
+                            title={feature.title}
+                            description={feature.description}
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
