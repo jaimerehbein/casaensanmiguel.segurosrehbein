@@ -28,9 +28,9 @@ export const PoiCard = ({ icon, category, items, className }: PoiCardProps) => {
 
             <div className="space-y-4">
                 {items.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-center group/item hover:bg-white/[0.03] p-2 -mx-2 rounded-lg transition-colors">
-                        <span className="text-brand-secondary group-hover/item:text-white transition-colors font-light tracking-wide">{item.name}</span>
-                        <span className="text-sm font-medium text-brand-gold/90 bg-brand-gold/5 border border-brand-gold/10 px-3 py-1.5 rounded-lg">
+                    <div key={idx} className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 group/item hover:bg-white/[0.03] p-3 -mx-3 rounded-xl transition-colors">
+                        <span className="text-brand-secondary group-hover/item:text-white transition-colors font-light tracking-wide leading-snug">{item.name}</span>
+                        <span className="shrink-0 text-xs sm:text-sm font-medium text-brand-gold/90 bg-brand-gold/5 border border-brand-gold/10 px-3 py-1.5 rounded-lg whitespace-nowrap">
                             {item.distance}
                         </span>
                     </div>
